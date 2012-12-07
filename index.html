@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/imtech-ict.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+    <section>
+        <h2>
+            <font face="helvetica">
+                <br>
+            </font>
+        </h2>
+        <h2>
+            <font face="helvetica">
+                <br>
+            </font>
+        </h2>
+        <h2>
+            <font face="helvetica">web development</font>
+        </h2>
+        <h2>
+            <font face="helvetica">&nbsp;for&nbsp;</font>
+        </h2>
+        <h2>
+            <font face="helvetica">the modern man</font>
+            <br>
+        </h2>
+    </section>
+    <section>
+        <section>
+            <h2>
+                <br>
+            </h2>
+            <h2>
+                <br>
+            </h2>
+            <h2>LET'S TALK<br>CSS<br>
+            </h2>
+
+</section>
+            <section>
+                <h2>SASS</h2>
+                <div>css pre-compiler</div>
+<div>
+    <br>
+    <img src="http://sass-lang.com/images/sass.gif">
+</div>
+</section>
+                <section>
+                    <h2>USE SASS</h2>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Nesting</li>
+                            <li>Variables</li>
+                            <li>Mixins</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <br>
+                    </div>
+                </section>
+                <section>
+                    <h2>SASS - VARIABLES</h2>
+<div>
+    <pre>
+                    <code>
+$blue: #3bbfce;
+
+.content-navigation {
+  border-color: $blue;
+  color: darken($blue, 9%);
+}
+</code>
+                </pre>
+<pre>
+                <code>
+.content-navigation {
+  border-color: #3bbfce;
+  color: #2b9eab;
+}
+</code>
+            </pre>
+</div>
+
+
+
+</section>
+            <section>
+                <h2>SASS - NESTING</h2>
+<div>
+<pre>
+                <code>
+#navbar {
+  width: 80%;
+  
+  ul { 
+    list-style-type: none; 
+  }  
+}
+</code>
+            </pre>
+<pre>
+            <code>
+#navbar {
+  width: 80%;
+}  
+
+#navbar ul {
+    list-style-type: none; 
+}
+</code>
+        </pre>
+</div>
+
+</section>
+        <section>
+            <h2>SASS - MIXINS</h2>
+<div>
+    <pre>
+            <code>
+$default_rounded_amount: 5px
+
+@mixin round-corners($amount: $default_rounded_amount) {
+  border-radius: $amount;
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+}
+
+.rounded-button {
+ @include round-corners(10px);
+}
+    </code>
+        </pre>
+    
+    <pre>
+        <code>
+.rounded-button {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+    </code>
+    </pre>
+</div>
+
+
+</section>
+    <section>
+        <h2>SASS - imports</h2>
+<div>
+<pre>
+        <code>
+/* _rounded.scss */
+
+.hello {
+    color: $mainColor;
+}
+
+</code>
+    </pre>
+</div>
+<code>
+<div>
+    <pre>
+    <code>
+/* all.scss */
+$mainColor: red;
+    
+@import "rounded"
+    </code>
+</pre>
+</div>
+<div>
+    <pre>
+<code>
+/* all.css */
+    
+.hello {
+    color: $mainColor;
+}
+    </code>
+</pre>
+</div>
+
+</code>
+</section>
+</section>
+<section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <h2>
+            <br>
+        </h2>
+        <h2>LET's talk&nbsp;more&nbsp;</h2>
+<h2>css</h2>
+
+
+
+
+</section>
+        <section>
+            <h2>COMPASS</h2>
+            <div>An open-source CSS Authoring Framework<br>
+            </div>
+        </section>
+        <section>
+            <h2>COMPASS</h2>
+<div>Provides SASS mixins for&nbsp;<br>
+        </div>
+<div>
+    <ul>
+        <li>CSS3</li>
+        <li>layout</li>
+        <li>color mgmt</li>
+        <li>typography<br>
+    </li>
+        <li>math</li>
+    </ul>
+    
+</div>
+<div>
+    <br>
+</div>
+<div>
+And much much more...
+</div>
+
+
+</section>
+<section>
+    <h2>COMPASS</h2>
+    <div>unobtrusive grid system implementations</div>
+    <div>
+        <br>
+    </div>
+    <div>Blueprint</div>
+    <div>zen grids</div>
+    <div>Blankwork</div>
+    <div>960.js</div>
+    <div>...</div>
+</section>
+</section>
+<section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <h2>
+            <br>
+        </h2>
+        <h2>LET's TALK&nbsp;<br>
+        </h2>
+        <h2>SOME MORE CSS</h2>
+        <div>What?! Again!</div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <h2>
+            <br>
+        </h2>
+        <h2>GRID SYSTEMS<br>
+        </h2>
+    </section>
+    <section>
+        <h2>CSS grid systems</h2>
+        <div>
+            <img src="http://www.webdesignstuff.co.uk/di101/files/2012/01/picture-4.png">
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>CSS grid systems</h2>
+<div>Why?</div>
+<div>
+    <br>
+</div>
+<div>Easier to design AND implement</div>
+<div>
+    <br>
+</div>
+<div>Why else?</div>
+<div>Wasn't that enough?</div>
+</section>
+        <section>
+            <h2>CSS grid systems</h2>
+<div>What were they called again?</div>
+<div>
+    <br>
+</div>
+<div>Blueprint</div>
+<div>960.js</div>
+<div>Blankwork</div>
+<div>
+    <br>
+</div>
+<div>
+    <br>
+</div>
+<h3>Use one that's usable in SASS!</h3>
+</section>
+        </section>
+        <section>
+            <h2>
+                <br>
+            </h2>
+            <h2>
+                <br>
+            </h2>
+            <h2>LET's TALK<br>HTML5</h2>
+        </section>
+        <section>
+            <h2>
+                <br>
+            </h2>
+            <h2>
+                <br>
+            </h2>
+            <h2>LET'S talk<br>JAVASCRIPT</h2>
+        </section>
+        <section>
+            <h2>
+                <br>
+            </h2>
+            <h2>
+                <br>
+            </h2>
+            <h2>LET's TALK<br>i18N</h2>
+        </section>
+        <section>
+            <h2 style="">
+                <br>
+                <br>
+            </h2>
+            <h2 style="">LET'S TALK<br>SPRING MVC</h2>
+        </section>
+    </div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
