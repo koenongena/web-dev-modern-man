@@ -16,8 +16,17 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #FFFFFF;  
+  background: #FFFFFF;
   background-color: #FFFFFF;
+}
+
+header {
+    height: 100px;
+    padding: 15px;
+    border-bottom: solid 2px #205A8F !important;
+    background: url('../../lib/img/imtech-ict/imtech-logo.png') 1% 25% no-repeat,
+      url('../../lib/img/imtech-ict/imtech-items.png') no-repeat 100% 25%,
+      #FFFFFF
 }
 
 .reveal {
