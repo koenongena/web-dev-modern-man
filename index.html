@@ -114,20 +114,20 @@
         <div>
     <pre>
                     <code>
-                        $blue: #3bbfce;
+$blue: #3bbfce;
 
-                        .content-navigation {
-                        border-color: $blue;
-                        color: darken($blue, 9%);
-                        }
+.content-navigation {
+    border-color: $blue;
+    color: darken($blue, 9%);
+}
                     </code>
                 </pre>
 <pre>
                 <code>
-                    .content-navigation {
-                    border-color: #3bbfce;
-                    color: #2b9eab;
-                    }
+.content-navigation {
+    border-color: #3bbfce;
+    color: #2b9eab;
+}
                 </code>
             </pre>
         </div>
@@ -140,24 +140,24 @@
         <div>
 <pre>
                 <code>
-                    #navbar {
-                    width: 80%;
+#navbar {
+    width: 80%;
 
-                    ul {
-                    list-style-type: none;
-                    }
-                    }
+    ul {
+        list-style-type: none;
+    }
+}
                 </code>
             </pre>
 <pre>
             <code>
-                #navbar {
-                width: 80%;
-                }
+#navbar {
+    width: 80%;
+}
 
-                #navbar ul {
-                list-style-type: none;
-                }
+#navbar ul {
+    list-style-type: none;
+}
             </code>
         </pre>
         </div>
@@ -169,27 +169,27 @@
         <div>
     <pre>
             <code>
-                $default_rounded_amount: 5px
+$default_rounded_amount: 5px
 
-                @mixin round-corners($amount: $default_rounded_amount) {
-                border-radius: $amount;
-                -moz-border-radius: $amount;
-                -webkit-border-radius: $amount;
-                }
+@mixin round-corners($amount: $default_rounded_amount) {
+    border-radius: $amount;
+    -moz-border-radius: $amount;
+    -webkit-border-radius: $amount;
+}
 
-                .rounded-button {
-                @include round-corners(10px);
-                }
+.rounded-button {
+    @include round-corners(10px);
+}
             </code>
         </pre>
 
     <pre>
         <code>
-            .rounded-button {
-            border-radius: 10px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            }
+.rounded-button {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
         </code>
     </pre>
         </div>
@@ -202,11 +202,11 @@
         <div>
 <pre>
         <code>
-            /* _rounded.scss */
+/* _rounded.scss */
 
-            .hello {
-            color: $mainColor;
-            }
+.hello {
+    color: $mainColor;
+}
 
         </code>
     </pre>
@@ -215,21 +215,21 @@
             <div>
     <pre>
     <code>
-        /* all.scss */
-        $mainColor: red;
+/* all.scss */
+$mainColor: red;
 
-        @import "rounded"
+@import "rounded"
     </code>
 </pre>
             </div>
             <div>
     <pre>
 <code>
-    /* all.css */
+/* all.css */
 
-    .hello {
+.hello {
     color: $mainColor;
-    }
+}
 </code>
 </pre>
             </div>
@@ -284,19 +284,6 @@
 
 
     </section>
-    <section>
-        <h2>COMPASS</h2>
-
-        <div>unobtrusive grid system implementations</div>
-        <div>
-            <br>
-        </div>
-        <div>Blueprint</div>
-        <div>zen grids</div>
-        <div>Blankwork</div>
-        <div>960.js</div>
-        <div>...</div>
-    </section>
 </section>
 <section>
     <section>
@@ -329,6 +316,19 @@
 
         <h2>GRID SYSTEMS<br>
         </h2>
+    </section>
+    <section>
+        <h2>COMPASS</h2>
+
+        <div>unobtrusive grid system implementations</div>
+        <div>
+            <br>
+        </div>
+        <div>Blueprint</div>
+        <div>zen grids</div>
+        <div>Blankwork</div>
+        <div>960.js</div>
+        <div>...</div>
     </section>
     <section>
         <h2>CSS grid systems</h2>
@@ -486,10 +486,11 @@
 
     <pre>
                     <code>
-                        localStorage.setItem("usedTheme", "imtech.css")
+localStorage.setItem("usedTheme", "imtech.css")
 
-                        var theme = localStorage.getItem("usedTheme")
-                        body.styleSheets[0] = theme </code>
+var theme = localStorage.getItem("usedTheme")
+body.styleSheets[0] = theme
+                    </code>
                 </pre>
         </div>
 
@@ -505,7 +506,7 @@
         <div>
             <br>
         </div>
-        <div>WebSQL</div>
+        <div>IndexedDb</div>
         <div>SqlLite</div>
     </section>
     <section>
@@ -620,6 +621,39 @@
         <div>Try</div>
         <div>
             <img src="http://coffeescript.org/documentation/images/logo.png">
+        </div>
+    </section>
+    <section>
+        <h2>Rich JavaScript Applications</h2>
+        <h3>Model-View-Whatever</h3>
+
+        <div>
+            <table class="gridtable" width="100%">
+            <tbody>
+            <tr>
+            <td>
+                      <strong>Libraries</strong>
+                    </td>
+            <td>
+                      <strong>Frameworks</strong>
+                    </td>
+            </tr>
+            <tr>
+            <td>
+            <p>Backbone</p>
+            <p>Knockout</p>
+            <p>Spine</p>
+            <p>CanJS</p>
+            </td>
+            <td>
+            <p>Ember</p>
+            <p>AngularJS</p>
+            <p>Batman</p>
+            <p>Meteor</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
         </div>
     </section>
 </section>
